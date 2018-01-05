@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+.cleaner{ clear:both;}
+
+body {
+	margin: 0 0; background:url(../imgs/bkg.gif) repeat-x; 
+	text-align: center;
+}
+
+
+div.contenedor {width: 100%; height:400px; border:1px solid #e7e7e7; position:relative; }
+div.conte1, div.conte2 { display: inline-block; }
+div.contenedor div.conte1{ width:275px; height:375px; }
+div.contenedor div.conte1 img{margin-left:30px; margin-top:25px;}
+
+div.contenedor div.conte2{width:350px; height:350px; margin-top:25px;}
+div.contenedor div.conte2 div.titulo{width:350px; height:26px; color:#000; font-size:22px; font-weight:700; font-family: 'PT Sans', sans-serif; }
+div.contenedor div.conte2 div.titulo span{font-weight:700; color:#777 }
+
+div.contenedor div.conte2 div.bajada{color:#000; font-size:14px; line-height:1.5; font-family:Arial, Helvetica, sans-serif }
+
+div.contenedor div.conte2 div.mapas{width:350px; height:185px; margin-top:35px; }
+div.contenedor div.conte2 div.mapas a{color:#000; text-decoration:none;} 
+
+div.contenedor div.conte2 div.mapas div.map1,
+div.contenedor div.conte2 div.mapas div.map2,
+div.contenedor div.conte2 div.mapas div.map3
+{  height:185px; color:#000;  font-size:14px; font-weight:700; font-family: 'PT Sans', sans-serif; float:left;}
+
+div.contenedor div.conte2 div.mapas div.map1{width:105px; border-right:1px solid #cccccc; background:url(../imgs/map1.png) no-repeat 0px 25px;}
+div.contenedor div.conte2 div.mapas div.map2{width:115px; border-right:1px solid #cccccc; text-align:center; background:url(../imgs/map2.png) no-repeat 15px 25px;}
+div.contenedor div.conte2 div.mapas div.map3{width:115px;  text-align:center; background:url(../imgs/map3.png) no-repeat 15px 25px;}
+
+div.contenedor div.conte2 div.logos{width:350px; height:50px; margin-top:25px;}
+
+
+@media (max-width: 660px) {
+  div.conte1 { display: none; }
+}
